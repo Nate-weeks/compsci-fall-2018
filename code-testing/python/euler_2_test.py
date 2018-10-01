@@ -15,7 +15,7 @@ class Euler_2_test(unittest.TestCase):
 
     def test_add_array(self):
         even_array = self.array.even_number(self.array.createFibArray())
-        self.assertEqual(44, self.array.add_array(even_array))
+        self.assertEqual(45, self.array.add_array(even_array))
 
 if __name__ == '__main__':
     unittest.main()

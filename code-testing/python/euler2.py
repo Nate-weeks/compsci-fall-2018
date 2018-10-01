@@ -23,6 +23,7 @@ class Euler2(object):
         return array
 
     def even_number(self, array):
+        ''' given an array, return an array of only even numbers '''
         even_array = []
         for i in range(len(array)):
             if array[i] % 2 == 0:
@@ -30,6 +31,7 @@ class Euler2(object):
         return even_array
 
     def add_array(self, array):
+        ''' total an array of integers '''
         total = 0
         for i in range(len(array)):
             total += array[i]
@@ -37,6 +39,7 @@ class Euler2(object):
 
 def main():
     arr = Euler2(4000000)
+    print "the even sum of even fibonacci numbers under 4000000 is: "
     print arr.add_array(arr.even_number(arr.createFibArray()))
 
 main()
