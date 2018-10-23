@@ -1,9 +1,14 @@
-function buildArray() {
+/** Program by Nate Weeks to solve euler 4
+October 2018
+**/
+
+
+function buildArray(num) {
   var arr = []
   var a;
   var b;
-  for(a=100; a< 1000; a++){
-    for(b=a; b<1000; b++){
+  for(a=1; a < num; a++){
+    for(b=a; b<num; b++){
       let x = a * b
       arr.push(x)
     }
@@ -25,14 +30,18 @@ isPalindrome = function(num){
   }
 }
 
-function main() {
-  arr = buildArray()
+function main(num) {
+  let answer = 0;
+  arr = buildArray(num)
   for(i=arr.length - 1; i>0; i--){
     if (isPalindrome(arr[i]) == true){
-      return arr[i]
+      answer = arr[i]
       break
     }
   }
+  return answer
 }
 
-console.log(main())
+console.log(main(1000))
+
+module.exports = {isPalindrome, reverseString, buildArray, main};

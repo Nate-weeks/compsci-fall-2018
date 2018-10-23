@@ -1,4 +1,4 @@
-require 'spec_helper'
+require_relative 'spec_helper'
 
 RSpec.describe Euler_1 do
   let(:example) {Euler_1.new(10)}
