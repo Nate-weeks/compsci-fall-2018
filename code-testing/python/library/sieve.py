@@ -8,7 +8,7 @@ import math
 
 def sieve(num):
     i = 2
-    array = list(range(num))
+    array = list(range(num+1))
     while i < math.sqrt(num):   #to get all primes under a number only have to check the sqaure root of that number
         temp = i                #temp to hold starting value of i
         while i < num - 1:
