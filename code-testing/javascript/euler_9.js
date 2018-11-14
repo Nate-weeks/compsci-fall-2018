@@ -18,3 +18,5 @@ function euler_9(){
 }
 
 console.log(euler_9())
+
+module.exports = {euler_9}

@@ -1,11 +1,11 @@
 # euler 8 - code by Nate Weeks to solve euler problem 8
 #November 2018
 
-def parse_info
-  #parses a large string of integers into an array of integers
+def parse_info(filestring)
+  #takes a file and parses a large string of integers into an array of integers
   integer_list = []
 # parse the input into an array of individual integers
-  File.readlines("./input/euler_8_input.txt").each { |line| line[0...-1].split("").each {|char| integer_list << char.to_i}}
+  File.readlines(filestring).each { |line| line[0...-1].split("").each {|char| integer_list << char.to_i}}
   return integer_list
 end
 
@@ -26,6 +26,7 @@ def greatest_product(number, integer_list)
     end
     i += 1
   end
+  return greatest_product
 end
 
-puts greatest_product(13, parse_info())
+puts greatest_product(13, parse_info("./input/euler_8_input.txt"))
