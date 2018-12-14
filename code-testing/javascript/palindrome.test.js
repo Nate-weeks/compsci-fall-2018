@@ -5,7 +5,7 @@ test("a number is a palindrome", () => {
 })
 
 test("reverse string reverses a string", () => {
-  expect(reverseString("hello")).toBe("olleh")
+  expect(reverseString("hello")).toBe("ollehs")
 })
 
 test("buildarray returns an array of products for each number under num and sorts them least to greatest", () => {
