@@ -1,5 +1,6 @@
 // driver program for advent of code 2018
 // Nate Weeks dec 2018
+// module idea taken from https://markheath.net/post/advent-of-code-2017-day-1
 
 let fs = require('fs');
 const getInput = require('./utils')
