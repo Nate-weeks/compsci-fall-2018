@@ -4,7 +4,7 @@ pragma solidity ^0.4.17;
      address public manager;
      address[] public players;
 
-     function lottery() public{
+     function Lottery() public{
          manager = msg.sender;
      }
 
